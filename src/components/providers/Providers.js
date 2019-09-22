@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import {getProvidersData, FAKE} from "../../api"
+import {getProvidersData} from "../../api"
 import Table from './Table'
 import TableHeader from './TableHeader'
 class Providers extends Component {
