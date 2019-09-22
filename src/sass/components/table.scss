@@ -1,0 +1,83 @@
+.table {
+  margin: 30px auto;
+  &__header,
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 1px;
+  }
+
+  &__header {
+    background-color: #333;
+    height: 25px;
+    color: white;
+    &--cell {
+      line-height: 25px;
+      text-align: center;
+      border-right: 1px solid #fff;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+  &__row {
+    border-bottom: 1px solid #bbb;
+    font-size: 12px;
+    .cell {
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+    }
+    .cell--strategy {
+      color: $blue;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .cell--positive {
+      font-weight: bold;
+      font-size: 14px;
+      color: $green;
+    }
+    .cell--negtive {
+      font-weight: bold;
+      font-size: 14px;
+      color: $black;
+    }
+  }
+  &__btn {
+    background-color: blue;
+    color: #fff;
+    font-weight: 400;
+    padding: 0 7px;
+    line-height: 22px;
+    &:hover {
+      background-color: $blue;
+    }
+  }
+}
+
+
+.table__header--cell{
+    span{
+        transition: all 0.2s;
+    }
+    .up{
+        transform: rotate(180deg)
+    }
+    .down{
+        transform: rotate(0)
+    }
+}
+
+.cell--followers{
+    animation: fadein 2s;
+
+}
+          
+         
+@keyframes fadein {
+    from { opacity: 0.4; }
+    to   { opacity: 1; }
+}

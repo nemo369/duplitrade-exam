@@ -1,0 +1,16 @@
+html {
+  font-size: 1.1vw;
+}
+@media (min-width: 1440px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: "Open Sans", Arial, "Helvetica Neue", "Helvetica", Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $drakgray;
+}

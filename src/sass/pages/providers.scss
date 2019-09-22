@@ -1,0 +1,19 @@
+.main-providers{
+    max-width: 925px;
+    padding: 0 5px;
+    margin: 20px auto;
+}
+.Button--blueBackgroundless {
+    border: 0;
+    color: #1060ff;
+    transition: background-color .5s,color .5s;
+    background-color: transparent;
+    border-color: #1060ff;
+    border-width: 1px;
+    border-style: solid;
+    letter-spacing: .2px;
+    margin: 35px auto;
+    width: 41.66667%;
+    line-height:75px;
+    text-align: center;
+}

@@ -1,0 +1,27 @@
+.partners {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  &__wrapper {
+    padding: 30px 0;
+    background-color: $gray;
+  }
+  &__logo {
+    margin: 0 15px;
+  }
+  &__btn {
+    color: white;
+    background-color: $green;
+    letter-spacing: 0.2px;
+    font-size: 24px;
+    padding: 20px 37px;
+    box-sizing: content-box;
+    margin: 30px auto;
+    &:hover{
+        background-color: #15b608;
+    }
+}
+ 
+  
+}
