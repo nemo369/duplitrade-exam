@@ -36,7 +36,7 @@ const LangMenu = ({ currentLang }) => {
         <button className={`currentlang-btn flag flag-${currentLang}`}></button>
         <div className="absolute langs__dropwdown">
         {langs.map(lang => (
-          <button  className={`flex langs__lang`}><div key={lang.code} className={`flag flag-${lang.code}`}></div><small>{lang.name}</small></button>
+          <button key={lang.code} className={`flex langs__lang`}><div className={`flag flag-${lang.code}`}></div><small>{lang.name}</small></button>
           ))}
           </div>
       </div>
