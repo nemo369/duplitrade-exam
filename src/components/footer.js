@@ -1,5 +1,5 @@
 import React from "react"
-import FooterMenu from "./FooterMenu"
+import FooterMenu from "./footer/footermenu"
 import { Link } from "gatsby"
 
 const Footer = ({ menus }) => {
