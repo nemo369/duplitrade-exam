@@ -1,5 +1,7 @@
 .header__placeholder {
   height: 157px;
+  position: relative;
+  z-index: 1;
 }
 .header {
   max-width: 915px;
@@ -100,7 +102,6 @@
     padding: 0 15px;
   }
   span {
-    color: $white;
     display: inline-block;
     margin: 0 15px;
   }
