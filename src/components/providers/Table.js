@@ -5,7 +5,7 @@ const Table = ({ rows, handleDuplicate }) => {
     <div className="table__body">
       {rows &&
         rows.map(row => (
-          <div key={row.strategy} className="table__row">
+          <div key={row.Strategy} className="table__row">
             <Row row={row} />
             <div className="cell">
             <button
@@ -30,11 +30,11 @@ const Row = ({ row }) => {
       key={key}
         className={`cell cell--${key}
          ${
-           key === "netpl" && parseInt(row[key]) > 0
+           key === "Net P/L" && parseInt(row[key]) > 0
              ? "cell--positive"
              : ""
          } 
-         ${key === "netpl" && parseInt(row[key]) < 0 ? "cell--negtive" : ""}`}
+         ${key === "Net P/L" && parseInt(row[key]) < 0 ? "cell--negtive" : ""}`}
       >
         {row[key]}
       </div>

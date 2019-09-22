@@ -30,9 +30,9 @@ class Providers extends Component {
       })
     }
   }
-  reSort = (key, row) =>{
+  reSort = (key) =>{
       if(!this.state.providers) return;
-      if(key=== 'followers'){
+      if(key=== 'Followers'){
           let rows = [...this.state.providers.rows];
           rows.sort((a,b) =>{
             if(this.state.sortByBiggest){

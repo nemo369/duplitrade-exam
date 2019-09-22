@@ -1,9 +1,18 @@
-const jsonUrl = `http://gsx2json.com/api?id=1Ifv_KbYZAjzsg_8KG7FfwgDr1IRxmwBDZJwJFGmH7pw`
+// https://docs.google.com/spreadsheets/d/1Ifv_KbYZAjzsg_8KG7FfwgDr1IRxmwBDZJwJFGmH7pw/edit?usp=sharing
+// const jsonUrl = `https://spreadsheets.google.com/feeds/list/1Ifv_KbYZAjzsg_8KG7FfwgDr1IRxmwBDZJwJFGmH7pw/od6/public/values?alt=json`
+// const jsonUrl = `http://gsx2json.com/api?id=1Ifv_KbYZAjzsg_8KG7FfwgDr1IRxmwBDZJwJFGmH7pw`
+const jsonUrl = `https://sheet.best/api/sheets/0d083243-7fd3-476c-a786-4bde2c5ad395`
+
 
 export async function getProvidersData() {
   let response = await fetch(jsonUrl)
-  let data = await response.json()
-  return data
+  let data = await response.json();
+ let  columns = Object.keys(data[0]).map((key) => key);
+  let res ={
+    columns,
+    rows:data
+  }
+  return res
 }
 
 export const FAKE = () => {

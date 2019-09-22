@@ -19,6 +19,7 @@
 
 // Vendor: handles 3rd party css
 @import './vendor/loader.scss';
+@import './vendor/flags.scss';
 // Components: have a single scss file for each individual component
 
 @import './components/hambureger.scss';

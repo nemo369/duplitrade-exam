@@ -9,7 +9,8 @@ class Header extends React.Component {
     super(props)
     this.state = {
       visible: true,
-      navOpen:false
+      navOpen:false,
+      currentLang:'us'
     }
   }
   componentDidMount() {
@@ -51,7 +52,7 @@ class Header extends React.Component {
                 <span className="hamburger__span hamburger__span--2">|</span>
                 <span className="hamburger__span hamburger__span--3">|</span>
               </button>
-              <LangMenu currentLang="en" />
+              <LangMenu currentLang={this.state.currentLang} />
               <div className="flc" />
             </div>
           </header>
