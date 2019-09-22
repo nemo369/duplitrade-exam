@@ -20,10 +20,7 @@ class Header extends React.Component {
     window.removeEventListener("scroll", this.handleScroll)
   }
   handleScroll = () => {
-    const { prevScrollpos } = this.state
-
     const visible = window.pageYOffset < 5
-
     this.setState({
       visible,
     })
